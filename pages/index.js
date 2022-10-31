@@ -7,6 +7,9 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   return (
@@ -20,8 +23,9 @@ export default function Home() {
       <main className="bg-white px-10 ">
         <section className="min-h-screen">
           {/* Navigation Bar */}
+
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Kene</h1>
+            <h1 className="text-xl font-burtons">Kenechukwu</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="curor-pointer text-2xl" />
@@ -56,8 +60,85 @@ export default function Home() {
           </div>
 
           {/* 3d Image */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
-            <Image src={deved} />
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={deved} fill object-fit="cover" />
+          </div>
+        </section>
+
+        {/* My Services */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-3">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Since the beginning of my journey in the tech industry, I have
+              worked and consulted both onsite and remotely for{" "}
+              <span className="text-teal-500">Individuals</span>,
+              <span className="text-teal-500">Startups</span> and collaborated
+              with talented individuals on a professional level to create Web
+              Products for both business and consumer use.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer a wide range of services, including programming and
+              teaching.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 justify-center">
+              <Image
+                className=" m-auto"
+                src={design}
+                width={100}
+                height={100}
+                alt=""
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating beautiful User Interface for your needs following core
+                design theory
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image className=" m-auto" src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Web Development</h3>
+              <p className="py-2">
+                Creating beautiful User Interface for your needs following core
+                design theory
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image
+                className=" m-auto"
+                src={consulting}
+                width={100}
+                height={100}
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">Teaching</h3>
+              <p className="py-2">
+                Creating beautiful User Interface for your needs following core
+                design theory
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-3">PortFolio</h3>
           </div>
         </section>
       </main>
