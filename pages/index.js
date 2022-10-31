@@ -2,9 +2,11 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
-  AiFillLinkedIn,
-  AiFillYoutube,
-} from "react-icons";
+  AiFillLinkedin,
+  AiFillGithub,
+} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -35,16 +37,28 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div>
-            <h2>Kenechukwu Ubesie</h2>
-            <h3>Developer and Designer</h3>
-            <p>
+          <div className="text-center p-10 ">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium text-center">
+              Kene Ubesie
+            </h2>
+            <h3 className="text-2xl py-2">Developer and Designer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
               FullStack Web Developer providing services for programming and
               design content needs. Feel free to contact me for your projects.
             </p>
           </div>
 
-          <div></div>
+          {/* social media icons */}
+          <div className="text-5xl flex justify-center gap-19 py-3 text-gray-600">
+            <AiFillLinkedin />
+            <AiFillGithub />
+            <AiFillTwitterCircle />
+          </div>
+
+          {/* 3d Image */}
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
+            <Image src={deved} />
+          </div>
         </section>
       </main>
     </div>
