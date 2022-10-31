@@ -4,19 +4,25 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
+  AiTwotoneMail,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import kene from "../public/kene.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import web1 from "../public/web1.jpeg";
+import web2 from "../public/web2.jpeg";
+import web3 from "../public/web3.jpeg";
+import web4 from "../public/web4.jpeg";
 import { useState } from "react";
+
+{
+  /* <img
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                alt=""
+              /> */
+}
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,25 +63,32 @@ export default function Home() {
               Kene Ubesie
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Developer and Designer
+              Full Stack Developer and Graphics Designer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
-              FullStack Web Developer offering services for coding and content
+              FullStack Web Developer offering services for coding and graphics
               design requirements. Feel free to get in touch with me about your
               projects.
             </p>
           </div>
 
           {/* social media icons */}
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin className="dark:text-gray-400" />
-            <AiFillGithub className="dark:text-gray-400" />
-            <AiFillTwitterCircle className="dark:text-gray-400" />
+          <div className="text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-600">
+            <a href="https://linkedin.com/in/kene-ubesie" target={"_blank"}>
+              <AiFillLinkedin className="dark:text-gray-400" />
+            </a>
+            <a href="https://github.com/Kenechvkwv" target={"_blank"}>
+              <AiFillGithub className="dark:text-gray-400" />
+            </a>
+            <a href="https://twitter.com/Kenechvkwv" target={"_blank"}>
+              <AiFillTwitterCircle className="dark:text-gray-400" />
+            </a>
+            <AiTwotoneMail className="dark:text-gray-400" />
           </div>
 
-          {/* 3d Image */}
+          {/* Cartoon Image */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved} fill object-fit="cover" />
+            <Image src={kene} fill object-fit="cover" />
           </div>
         </section>
 
@@ -87,21 +100,21 @@ export default function Home() {
               Services I offer
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              Since the beginning of my journey in the tech industry, I have
-              worked and consulted both onsite and remotely for{" "}
-              <span className="text-teal-500">Individuals</span>,
-              <span className="text-teal-500">Startups</span> and collaborated
-              with talented individuals on a professional level to create Web
-              Products for both business and consumer use.
+              Since I first started working in the tech sector, I have worked
+              and provided consulting services both locally and remotely for{" "}
+              <span className="text-teal-500">individuals</span>,
+              <span className="text-teal-500">startups</span>, and worked in
+              professional teams to develop web products for both commercial and
+              consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              I offer a wide range of services, including programming and
-              teaching.
+              I provide a variety of services, such as designing, teaching, and
+              programming.
             </p>
           </div>
 
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 justify-center">
+            <div className="text-center shadow-lg  p-10 rounded-xl my-10 justify-center  dark:shadow-gray-600">
               <Image
                 className=" m-auto"
                 src={design}
@@ -110,32 +123,27 @@ export default function Home() {
                 alt=""
               />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Beautiful Designs
+                Beautiful Graphic Designs
               </h3>
               <p className="py-2 dark:text-gray-400">
-                Creating beautiful User Interface for your needs following core
-                design theory
+                Creating stunning graphic materials that meet your demands while
+                adhering to fundamental design principles.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600">
               <Image className=" m-auto" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 Web Development
               </h3>
               <p className="py-2 dark:text-gray-400">
-                Creating beautiful User Interface for your needs following core
-                design theory
+                Designing impressive user interfaces for your website's front
+                end and highly legible, high quality back end layouts for your
+                completely optimized websites.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600">
               <Image
                 className=" m-auto"
                 src={consulting}
@@ -146,12 +154,11 @@ export default function Home() {
                 Teaching
               </h3>
               <p className="py-2 dark:text-gray-400">
-                Creating beautiful User Interface for your needs following core
-                design theory
+                I am capable of effectively tutoring and guiding beginners in
+                web development from a beginner to a professional level by
+                employing teaching strategies tailored specifically for each
+                student.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
             </div>
           </div>
         </section>
@@ -163,16 +170,27 @@ export default function Home() {
               PortFolio
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              Since the beginning of my journey in the tech industry, I have
-              worked and consulted both onsite and remotely for{" "}
-              <span className="text-teal-500">Individuals</span>,
-              <span className="text-teal-500">Startups</span> and collaborated
-              with talented individuals on a professional level to create Web
-              Products for both business and consumer use.
+              I am a fullstack Software Engineer with 2+ years of experience in
+              the implementation of data driven web applications. I have
+              experience with all stages of the software development cycle, and
+              adequate knowledge of languages/technologies such as PHP,
+              JavaScript, React, MySQL, HTML, CSS etc. I also have experience
+              with frameworks such as Bootstrap, MaterializeCss, TailwindCss and
+              Next.JS. I have experience with tools such as Git amongst others.
+              I am passionate about software development. I am a fast learner
+              and take pride in my ability to quickly master and apply new
+              knowledge.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              I offer a wide range of services, including programming and
-              teaching.
+              My objective is to join a team of very skilled and driven
+              engineers that can inspire me to work and achieve beyond my
+              current perceived limits, while contributing to a meaningful
+              project and taking my career to the next level.
+            </p>
+            <hr />
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
+              The projects I have recently been able to work on are listed
+              below.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap justify-center">
@@ -206,24 +224,6 @@ export default function Home() {
             <div className="basis-1/3">
               <Image
                 src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3">
-              <Image
-                src={web6}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
