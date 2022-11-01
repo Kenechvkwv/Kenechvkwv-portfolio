@@ -25,7 +25,8 @@ import { useState } from "react";
 }
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -48,21 +49,22 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
+                <button
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  type="button"
+                  onClick={() => setShowModal(true)}
                 >
-                  Resume
-                </a>
+                  Ask Me
+                </button>
               </li>
             </ul>
           </nav>
 
           <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl text-center">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl text-center hover:-translate-y-1 hover:scale-80 duration-300">
               Kene Ubesie
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white hover:-translate-y-1 hover:scale-80 duration-300">
               Full Stack Developer and Graphics Designer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
@@ -87,7 +89,7 @@ export default function Home() {
           </div>
 
           {/* Cartoon Image */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 animate-bounce">
             <Image src={kene} fill object-fit="cover" />
           </div>
         </section>
@@ -96,7 +98,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 font-semibold dark:text-gray-200">
+            <h3 className="text-3xl py-1 font-semibold dark:text-gray-200 hover:-translate-y-1 hover:scale-80 duration-300">
               Services I offer
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
@@ -114,7 +116,7 @@ export default function Home() {
           </div>
 
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg  p-10 rounded-xl my-10 justify-center  dark:shadow-gray-600">
+            <div className="text-center shadow-lg  p-10 rounded-xl my-10 justify-center  dark:shadow-gray-600 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 className=" m-auto"
                 src={design}
@@ -131,7 +133,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image className=" m-auto" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 Web Development
@@ -143,7 +145,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 className=" m-auto"
                 src={consulting}
@@ -194,7 +196,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap justify-center">
-            <div className="basis-1/3">
+            <div className="basis-1/3 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 src={web1}
                 className="rounded-lg object-cover"
@@ -203,7 +205,7 @@ export default function Home() {
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3">
+            <div className="basis-1/3 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 src={web2}
                 className="rounded-lg object-cover"
@@ -212,7 +214,7 @@ export default function Home() {
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3">
+            <div className="basis-1/3 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 src={web3}
                 className="rounded-lg object-cover"
@@ -221,7 +223,7 @@ export default function Home() {
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3">
+            <div className="basis-1/3 hover:-translate-y-1 hover:scale-110 duration-300">
               <Image
                 src={web4}
                 className="rounded-lg object-cover"
