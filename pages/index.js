@@ -64,13 +64,13 @@ export default function Home() {
 
           {showModal ? (
             <>
-              <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+              <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                   {/*content*/}
-                  <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                  <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none dark:bg-gray-900">
                     {/*header*/}
                     <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                      <h3 className="text-3xl font-semibold">
+                      <h3 className="text-3xl font-semibold dark:text-white">
                         Make Your Enquiries
                       </h3>
                     </div>
@@ -81,7 +81,7 @@ export default function Home() {
                         <div class="md:flex md:items-center mb-6">
                           <div class="md:w-1/3">
                             <label
-                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 dark:text-gray-400"
                               for="inline-full-name"
                             >
                               Full Name
@@ -89,7 +89,7 @@ export default function Home() {
                           </div>
                           <div class="md:w-2/3">
                             <input
-                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
                               id="inline-full-name"
                               type="text"
                               placeholder="Jane Doe"
@@ -100,7 +100,7 @@ export default function Home() {
                         <div class="md:flex md:items-center mb-6">
                           <div class="md:w-1/3">
                             <label
-                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 dark:text-gray-400"
                               for="phone"
                             >
                               Phone Number
@@ -108,7 +108,7 @@ export default function Home() {
                           </div>
                           <div class="md:w-2/3">
                             <input
-                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
                               id="phone"
                               type="tel"
                               placeholder="+1234567890"
@@ -120,7 +120,7 @@ export default function Home() {
                         <div class="md:flex md:items-center mb-6">
                           <div class="md:w-1/3">
                             <label
-                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 dark:text-gray-400"
                               for="email"
                             >
                               Email Address
@@ -128,7 +128,7 @@ export default function Home() {
                           </div>
                           <div class="md:w-2/3">
                             <input
-                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500 dark:text-gray-400"
                               id="email"
                               type="email"
                               placeholder="janedoe@example.com"
@@ -140,14 +140,14 @@ export default function Home() {
                         <div class="mb-6">
                           <label
                             for="large-input"
-                            class="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-300"
+                            class="block mb-2 font-bold text-gray-500 dark:text-gray-400"
                           >
                             Your Message
                           </label>
                           <input
                             type="text"
                             id="large-input"
-                            class="block p-4 w-full text-gray-700 bg-gray-200 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block p-4 w-full text-gray-700 bg-gray-200 rounded-lg border border-gray-300 sm:text-md focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-700 dark:focus:ring-teal-500 dark:focus:border-teal-500"
                           />
                         </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
                           <div class="md:w-1/3"></div>
                           <div class="md:w-2/3">
                             <button
-                              class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                              class="shadow bg-teal-500 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                               type="button"
                             >
                               Submit
